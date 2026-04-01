@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div id="particles-js" style="position: fixed; width: 100%; height: 100%; z-index: -1;"></div>
+    
     <div class="card">
         <div class="avatar">👤</div>
 
@@ -42,6 +43,16 @@
                 <p><b>© 2026 Sasha & AI Collective:</b> Gemini & Co-Pilot</p>
         </div>
     </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelector(".card"), { // заміни .card на клас своєї картки
+    max: 15, // максимальний кут нахилу
+    speed: 400, // швидкість анімації
+    glare: true, // додає ефект відблиску "скла"
+    "max-glare": 0.5,
+    gyroscope: true // вмикає нахил через гіроскоп на смартфонах
+  });
+</script>
+    
 </body>
 </html>
