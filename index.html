@@ -1,40 +1,29 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Привіт, мене звати Олександр!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="particles-js" style="position: fixed; width: 100%; height: 100%; z-index: -1;"></div>
-    
-    <div class="card">
-        <div class="avatar">👤</div>
-
-        <h1 id="name">Привіт, я Саша</h1>
-        <p class="subtitle">Фотограф (початківець)</p>
-        
-        <div class="info-block">
-            <h3>Про мене:</h3>
-            <p>Вік: <b>16 років</b></p>
-            <p>Навчаюся в: <b><a href="https://ch-vpu.te.ua/" target="_blank" rel="noopener noreferrer">Чортківському ВПУ</a></b></p>
-            <p>Займаюся: <b>Фотографіями і т.п.</b></p>
-            <p>Проживаю в: <b>м.Чортків</b></p>
-        </div>
-
-        <div class="links">
-            <a href="mailto:dutka.sashca@gmail.com" class="link-btn">
-                <i class="fas fa-envelope"></i> Написати мені
-            </a>
-            <a href="https://www.instagram.com/sanya_1059v?igsh=ampid2c1aWY3aHhv" target="_blank" class="link-btn insta">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://t.me/Sanya_1059" target="_blank" class="link-btn telegram">
-                <i class="fab fa-telegram-plane"></i> Telegram
-            </a>
-            <a href="https://github.com/Sanya1059" target="_blank" class="link-btn github">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 }, // кількість точок
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 3 },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" } // точки тікають від курсора
+      }
+    }
+  });
+</script>
+<a href="https://github.com/Sanya1059" target="_blank" class="link-btn github">
                 <i class="fab fa-github"></i> Мій GitHub
             </a>
         </div>
